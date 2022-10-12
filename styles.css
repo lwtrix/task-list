@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #16213E;
+}
+
+.container {
+    margin: 10px auto;
+}
+
+.welcome-container {
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+.manage-tasks-container {
+    width: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.manage-tasks-container .new-task:visited,
+.manage-tasks-container .new-task:focus,
+.manage-tasks-container .new-task {
+    width: 100%;
+    border: 3px solid #533483;
+    color: #533483;
+    font-size: 1.5rem;
+    padding: 10px;
+    padding-left: 20px;
+    margin: 5px 0;
+    outline: 0;
+}
+
+
+.manage-tasks-container .new-task::placeholder {
+    color: #533483;
+}
+
+
+.manage-tasks-container .new-task:hover {
+    outline: none;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-container > * {
+    flex-grow: 1;
+}
+
+.btn-container .remove-first {
+    margin: 0 5px;
+}
+
+.task-list-container {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.task-list {
+    text-align: center;
+    list-style: none;
+    padding: 15px 0;
+    width: 90vh;
+    max-height: 20rem;
+    overflow: auto;
+}
+
+.task-list .task {
+    color: white;
+    background-color: #533483;
+    max-width: 25rem;
+    padding: 10px 0;
+    margin: 5px auto;
+}
+
+.task-status {
+    color: #E94560;
+}
